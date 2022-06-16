@@ -43,7 +43,7 @@
                         <h6>{{ job.func_name }}</h6>
                         <p>Args:{{ job.args }}</p>
                         <small class="text-muted d-block">Job ID: {{ job.id }}</small>
-                        <small class="text-muted d-block">Status: {{ job.status }}</small>
+                        <small class="text-muted d-block">Status: {{ job.get_status() }}</small>
                         <small class="text-muted d-block">Created at: {{ job.created_at.strftime('%a, %d %b %Y %H:%M:%S') }}</small>
                         <small class="text-muted d-block">Enqueued at: {{ job.enqueued_at.strftime('%a, %d %b %Y %H:%M:%S') }}</small>
                     </div>
